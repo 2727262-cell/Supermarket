@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SuperMarket: productos frescos y buenos precios.">
+  <title>Carrito y checkout | SuperMarket</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="logo" href="index.html">🛒 Super<span>Market</span></a>
+  <nav class="nav" aria-label="Navegación principal">
+    <a href="index.html" >Inicio</a>
+    <a href="productos.html" >Productos</a>
+    <a href="carrito.html" aria-current="page">Carrito</a>
+    <a href="contacto.html" >Contacto</a>
+  </nav>
+  <div class="header-actions">
+    <a class="btn btn-yellow" href="login.html">Iniciar sesión</a>
+    <a class="btn btn-primary" href="carrito.html">🛒 Mi compra</a>
+  </div>
+</header>
+
+
+<main>
+  <section class="page-heading"><h1>Carrito de compras</h1><p>Revisa tu lista y completa el formulario de compra simulada.</p></section>
+  <section class="section container checkout-layout">
+    <section class="info-panel">
+      <h2>Tu lista de compras</h2>
+      <article class="cart-row">
+        <img src="https://images.unsplash.com/photo-1568702846914-96b305d2aaeb?w=250" alt="Manzanas">
+        <div><h3>Manzanas rojas</h3><p class="small">Cantidad: 1 unidad</p></div>
+        <p class="price">$1.50</p>
+      </article>
+      <article class="cart-row">
+        <img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=250" alt="Leche">
+        <div><h3>Leche</h3><p class="small">Cantidad: 1 unidad</p></div>
+        <p class="price">$1.25</p>
+      </article>
+      <div class="cart-total">
+        <p>Subtotal: <strong>$2.75</strong></p>
+        <p>Envío: <strong>$1.00</strong></p>
+        <h2>Total: $3.75</h2>
+      </div><br>
+     
+      <a class="btn btn-green" href="productos.html">Seguir comprando</a>
+    </section>
+    <section class="form-card form-card-wide">
+      <h2>Datos de envío y pago</h2>
+      <form action="#" method="get">
+        <div class="field"><label for="cliente">Nombre completo</label><input id="cliente" name="cliente" type="text" required autocomplete="name"></div>
+        <div class="field"><label for="direccion">Dirección de envío</label><input id="direccion" name="direccion" type="text" required autocomplete="street-address"></div>
+        <div class="form-grid">
+          <div class="field"><label for="ciudad">Ciudad</label><input id="ciudad" name="ciudad" type="text" required autocomplete="address-level2"></div>
+          <div class="field"><label for="telefono">Teléfono</label><input id="telefono" name="telefono" type="tel" pattern="[0-9+() -]{8,}" required autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="pago">Método de pago simulado</label><select id="pago" name="pago" required><option value="">Selecciona método</option><option>Tarjeta (simulación)</option><option>Pago contra entrega (simulación)</option></select></div>
+          
+        <button type="submit">Confirmar pedido (simulación)</button>
+      </form>
+    </section>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p><strong>🛒 SuperMarket</strong></p>
+  <p>Calidad, frescura y buenos precios.</p>
+  <p>Contacto: contacto@supermarket.com</p>
+  <p>© 2026 SuperMarket.</p>
+</footer>
+</body>
+</html>
